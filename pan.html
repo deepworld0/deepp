@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for PAN Card with document uploads and payment options">
+    <meta name="keywords" content="PAN card, apply online, Aadhaar, passport photo, signature, payment">
+    <meta name="author" content="Your Name">
+    <title>PAN Card Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+/* Apply Section */
+.apply-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apply-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.apply-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="file"] {
+    margin-bottom: 15px;
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="deepp.html">Home</a></li>
+                <li><a href="#apply">Apply for PAN</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apply" class="apply-section">
+            <h1>PAN Card Application</h1>
+            <p>Fill out the form below to apply for your PAN Card. Upload required documents and complete payment to proceed.</p>
+            
+            <form action="submit_application.php" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+                    <label for="address">Permanent Address:</label>
+                    <textarea id="address" name="address" required></textarea><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Document Upload</legend>
+                    <label for="aadhaar">Upload Aadhaar Card:</label>
+                    <input type="file" id="aadhaar" name="aadhaar" accept="image/*,application/pdf" required><br><br>
+
+                    <label for="photo">Upload Passport Size Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+                    <label for="signature">Upload Signature:</label>
+                    <input type="file" id="signature" name="signature" accept="image/*" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Method</legend>
+                    <label for="payment">Choose Payment Method:</label><br>
+                    <input type="radio" id="credit_card" name="payment_method" value="Credit Card" required>
+                    <label for="credit_card">Credit Card</label><br>
+
+                    <input type="radio" id="debit_card" name="payment_method" value="Debit Card">
+                    <label for="debit_card">Debit Card</label><br>
+
+                    <input type="radio" id="net_banking" name="payment_method" value="Net Banking">
+                    <label for="net_banking">Net Banking</label><br>
+
+                    <input type="radio" id="upi" name="payment_method" value="UPI">
+                    <label for="upi">UPI</label><br><br>
+
+                    <label for="amount">Amount: ₹500</label><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <button type="submit" class="btn">Submit Application</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PAN Card Application. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deep's Web Portal - Online Services like PAN Card, Passport, and more">
+    <meta name="keywords" content="PAN card, Passport, online services, government services, apply online">
+    <meta name="author" content="Deep Web Services">
+    <title>Deep's Web - Online Services Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+/* Services Section */
+.services-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1em;
+    margin: 15px 0;
+    color: #666;
+}
+
+.service-card .btn {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.service-card .btn:hover {
+    background-color: #45a049;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section textarea {
+    height: 150px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h1>Welcome to Deep's Web Portal</h1>
+            <p>Your one-stop source for information on government services and online applications.</p>
+        </section>
+        <h2><center>Our Services</center></h2> <br>
+        <section id="services" class="services-section">
+          
+            <div class="service-card">
+                <img src="https://www.rightsofemployees.com/wp-content/uploads/2023/11/Pan-card-212343.png" alt="PAN Card Image">
+                <h3>PAN Card</h3>
+                <p>The Permanent Account Number (PAN) is essential for financial transactions. Learn how to apply online.</p>
+                <a href="pan.html" target="_blank" class="btn">Apply for PAN</a>
+            </div>
+
+            <div class="service-card">
+                <img src="https://www.kreditbee.in/blog/content/images/2024/06/Blog_June_23-Types-of-Passports-in-India.png" alt="Passport Image">
+                <h3>Passport</h3>
+                <p>Get your passport for international travel. Apply or renew online.</p>
+                <a href="https://portal2.passportindia.gov.in" target="_blank" class="btn">Apply for Passport</a>
+            </div>
+
+            <div class="service-card">
+                <img src="https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/panjab-driving-licence.jpg" alt="Aadhaar Card Image">
+                <h3>driving license</h3>
+                <p>apply or update your <driving_license class=""></driving_license> It's essential for various services.</p>
+                <a href="dl.html" target="_blank" class="btn">Update licence</a>
+            </div>
+
+            <div class="service-card">
+                <img src="https://tvpunjab.com/storage/2022/01/epic-285x200.png" alt="Voter ID Image">
+                <h3>Voter ID</h3>
+                <p>Apply for your voter ID or make changes online with the Election Commission of India.</p>
+                <a href="https://nvsp.in" target="_blank" class="btn">Apply for Voter ID</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out!</p>
+            <form action="submit_contact_form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Deep's Web. All rights reserved.</p>
+    </footer>
+</body>
+</html>
